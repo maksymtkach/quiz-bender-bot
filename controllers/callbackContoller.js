@@ -110,7 +110,7 @@ async function callbackController(msg) {
                 const escapedDate = escapeMarkdownV2(formattedDate);
 
                 if (questions === '') {
-                    await bot.sendMessage(chatId, `Здається, ти геній, у якого нема помилок`, { parse_mode: 'MarkdownV2' });
+                    return await bot.sendMessage(chatId, `Здається, ти геній, у якого нема помилок`, { parse_mode: 'MarkdownV2' });
                 }
 
                 const finalMessage = `Обрано *${escapedTitle}* \\(${escapedDate}\\)\n\nПитання у яких допущено помилки:\n\n${questions}*Будь уважнішим наступного разу*`;
