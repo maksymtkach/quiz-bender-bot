@@ -72,7 +72,6 @@ async function messageController(msg) {
                     lastName,
                 });
             }
-            await bot.sendSticker(chatId, 'CAACAgIAAxkBAAIFW2c6yF2lRzaXiHILY0nZn54lqrJvAAJxUgACDo_RSysWdW3CVowsNgQ');
             return await showMainMenu(chatId);
         }
         if (text === '💌 Інформація') {

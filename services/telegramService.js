@@ -46,7 +46,6 @@ async function sendTestResults(chatId, correctAnswers, incorrectAnswers) {
     }
 
     // Відправка повідомлення та стікера
-    await bot.sendSticker(chatId, stickerId);
     return await bot.sendMessage(
         chatId,
         `✅ Тест завершено!\n\n📊 Результати:\n- Правильні відповіді: ${correctAnswers}\n- Неправильні відповіді: ${incorrectAnswers}\n🎉 Успішність: ${successRate.toFixed(2)}%`
