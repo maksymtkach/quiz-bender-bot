@@ -14,8 +14,6 @@ async function documentController(msg) {
         const questions = await parseQstFile(fileUrl, chatId, bot);
         chats[chatId] = questions;
 
-        await bot.sendSticker(chatId, 'CAACAgIAAxkBAAIFXmc6yIm420bcAQ3e_8HVf5qENbEKAAJmWgACYP1oSmTVjpgrAwJxNgQ');
-
         await bot.sendMessage(chatId, `Чи хочете ви зберегти виявлені питання (${questions.length} питань)?`, {
             reply_markup: {
                 inline_keyboard: [
